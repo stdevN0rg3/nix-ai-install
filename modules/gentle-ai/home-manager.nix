@@ -14,8 +14,6 @@ in
 
     package = mkOption {
       type = types.package;
-      default = pkgs.gentle-ai;
-      defaultText = "pkgs.gentle-ai";
       description = "The gentle-ai package to use";
     };
 
