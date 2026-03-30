@@ -62,12 +62,15 @@ Nix/NixOS support for AI tools - a modular approach to install and manage AI app
 ```
 nix-ai-install/
 ├── flake.nix                    # Main flake entry point
-├── modules/
-│   ├── gentle-ai/               # gentle-ai module
-│   │   ├── package.nix         # Package definition
-│   │   └── default.nix         # NixOS + Home Manager module
-│   └── README.md                # Module documentation
-└── README.md                    # This file
+├── flake.lock                   # Lock file (auto-generated)
+├── .gitignore
+├── README.md                    # This file
+└── modules/
+    ├── README.md                # Module index
+    └── gentle-ai/               # gentle-ai module
+        ├── package.nix          # Package definition
+        ├── default.nix          # NixOS + Home Manager module
+        └── README.md            # Tool-specific documentation
 ```
 
 ## Adding New Tools
