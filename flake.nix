@@ -23,11 +23,9 @@
       }
     ) // {
       # NixOS module - can be imported in NixOS configurations
-      nixosModule = { lib, pkgs, config, ... }:
-        import ./modules/gentle-ai/default.nix { lib = lib; pkgs = pkgs; };
+      nixosModule = import ./modules/gentle-ai/nixos.nix;
 
       # Home Manager module - can be imported in home-manager configurations
-      homeManagerModule = { lib, pkgs, config, ... }:
-        import ./modules/gentle-ai/default.nix { lib = lib; pkgs = pkgs; };
+      homeManagerModule = import ./modules/gentle-ai/home-manager.nix;
     };
 }
