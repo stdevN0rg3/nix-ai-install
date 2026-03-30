@@ -14,7 +14,7 @@ pkgs.stdenv.mkDerivation {
 
   src = gentle-ai-bin;
 
-  nativeBuildInputs = [ pkgs.darwin.autoPatchelfHook pkgs.autoPatchelfHook ];
+  nativeBuildInputs = [ pkgs.autoPatchelfHook ];
 
   installPhase = ''
     mkdir -p $out/bin
